@@ -20,3 +20,14 @@ https://cordova.apache.org/
 
 
 # Kotlin i Android studio
+
+## Język Kotlin
+https://kotlinlang.org/
+
+kompilator kotlina:
+https://otfried.org/courses/cs109/project-install.html
+
+https://github.com/JetBrains/kotlin/releases/tag/v1.9.10
+
+### Kotlin typy danych
+https://kotlinlang.org/docs/basic-types.html
