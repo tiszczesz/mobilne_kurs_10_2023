@@ -17,3 +17,6 @@ https://www.embarcadero.com/
 
 ### 6. Cordova
 https://cordova.apache.org/
+
+
+# Kotlin i Android studio
