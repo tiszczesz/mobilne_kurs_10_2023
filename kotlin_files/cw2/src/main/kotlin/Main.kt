@@ -1,10 +1,14 @@
+import kotlin.random.Random
 fun main(args: Array<String>) {
    // first();
-    print("Podaj tekst: ")
-    val text = readln();
-    print("Podaj ilosc: ")
-    val count = readln().toInt();
-    repeat(text,count);
+//    print("Podaj tekst: ")
+//    val text = readln();
+//    print("Podaj ilosc: ")
+ //   val count = readln().toInt();
+    //repeat(text,count);
+   // withWhile();
+   // withDoWhile()
+    StepRek(10);
 }
 
 fun first() {
@@ -33,6 +37,42 @@ fun second(){
 
 fun repeat(text:String,count:Int){
     for (i in 0..count){
-        println(text)
+        println(text+" range")
     }
+    for(i in 0 until count){
+        println(text+"until i = $i")
+    }
+    for(i in 1 until count step 2){
+        println(text+" i = $i")
+    }
+    for(i in 10 downTo  1){
+        println("i = $i")
+    }
+}
+fun withWhile(){
+    var tempOk = "Jest zimno"
+    var tempRoom = 10;
+    while(tempOk=="Jest zimno"){
+        tempRoom++;
+        if(tempRoom==20){
+            tempOk = "Teraz jest przyjemnie";
+        }
+        println("temperatura: $tempRoom odczucie: $tempOk")
+    }
+    //println("temperatura: $tempRoom odczucie: $tempOk")
+}
+fun withDoWhile(){
+    var losowa = 0;
+    var licznik = 0;
+    do{
+        losowa = Random.nextInt(0,20)
+        if(losowa!=0) licznik++
+        print(losowa.toString()+" ")
+    }while (losowa!=0);
+    println("\nIlosc elementow: $licznik")
+    println(4.toDouble()/3)
+}
+fun StepRek(count:Int){
+    if(count>0) StepRek(count-1)
+    println(count)
 }

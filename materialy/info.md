@@ -31,3 +31,14 @@ https://github.com/JetBrains/kotlin/releases/tag/v1.9.10
 
 ### Kotlin typy danych
 https://kotlinlang.org/docs/basic-types.html
+
+### Funkcje sterujące:
+https://kotlinlang.org/docs/basic-syntax.html
+
+https://kotlinlang.org/docs/control-flow.html
+
+### Tablice w Kotlinie
+https://kotlinlang.org/docs/arrays.html
+
+### Zbiory w Kotlinie:
+https://kotlinlang.org/docs/kotlin-tour-collections.html
