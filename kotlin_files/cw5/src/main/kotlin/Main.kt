@@ -7,6 +7,7 @@ fun Ex2() {
    //utworzyc klase Book (title,price,year,author, override toString() jeden konstruktor)
     //utworzyc liste oboektow Book (3 elementy)
     //wyswietlic zawartosc listy uzywajac metody toString z klasy Book
+    val b1 = Book()
 }
 
 fun Ex1(){
@@ -33,6 +34,7 @@ class  MyClass(){
         this.a = 0;
     }
 }
+//class Person (firstname:String="noname",lastname:String="noname"){
 class Person constructor(firstname:String="noname",lastname:String="noname"){
    private var firstname:String;
    private var lastname:String;
