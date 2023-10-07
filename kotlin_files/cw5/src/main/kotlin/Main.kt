@@ -9,6 +9,9 @@ fun Ex2() {
     //utworzyc liste oboektow Book (3 elementy)
     //wyswietlic zawartosc listy uzywajac metody toString z klasy Book
     val b1 = Book()
+    //val bookList = listOf<Book>(Book(),Book())
+    val bookList = mutableListOf<Book>();
+    bookList.add(Book())
 }
 
 fun Ex1(){
