@@ -42,3 +42,6 @@ https://kotlinlang.org/docs/arrays.html
 
 ### Zbiory w Kotlinie:
 https://kotlinlang.org/docs/kotlin-tour-collections.html
+
+### Klasy i obiekty
+https://kotlinlang.org/docs/classes.html
