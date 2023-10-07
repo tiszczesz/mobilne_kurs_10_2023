@@ -4,7 +4,8 @@ fun main(args: Array<String>) {
 }
 
 fun Ex2() {
-   //utworzyc klase Book (title,price,year,author, override toString() jeden konstruktor)
+   //utworzyc klase Book (title,price,year,author, override toString()
+    // jeden konstruktor)
     //utworzyc liste oboektow Book (3 elementy)
     //wyswietlic zawartosc listy uzywajac metody toString z klasy Book
     val b1 = Book()
