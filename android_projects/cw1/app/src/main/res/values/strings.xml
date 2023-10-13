@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">cw1</string>
+    <string name="app_name">Ex1</string>
+    <string name="buttton_v1">Click Me</string>
+    <string name="info_text">Hello from Android</string>
 </resources>
