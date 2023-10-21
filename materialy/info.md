@@ -174,3 +174,6 @@ class Constructors {
 
 ### Cykl życia Activity
 ![Alt text](activity_lifecycle.png)
+
+
+### aplikacje MultiActivity
