@@ -2,6 +2,7 @@ package com.example.cw4
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.example.cw4.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -12,7 +13,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(bind.root)
         bind.btnInfo.setOnClickListener {
             val info = bind.edInfo.text.toString().trim()
-            if
+            if(!info.isEmpty()){
+                bind.tvInfo.setText(info)
+            }else{
+                Toast.makeText(this@MainActivity,"Brak danych",Toast.LENGTH_LONG).show()
+            }
         }
     }
 }

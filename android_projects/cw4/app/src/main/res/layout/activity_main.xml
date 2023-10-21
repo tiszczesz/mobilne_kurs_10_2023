@@ -12,10 +12,10 @@
         android:id="@+id/edInfo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:hint="Podaj imię"
         android:ems="10"
-        android:inputType="text" />
+        android:hint="Podaj imię"
+        android:inputType="text"
+         />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -41,20 +41,30 @@
             android:textSize="20sp" />
     </LinearLayout>
 
-    <View
-        android:id="@+id/divider"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <Button
+        android:id="@+id/btnFrag1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:layout_weight="1"
-        android:background="?android:attr/listDivider" />
+        android:backgroundTint="#FF5722"
+        android:text="Fragment 1" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="match_parent"
+        android:id="@+id/btnFrag2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:layout_weight="1"
         android:backgroundTint="#FF9800"
-        android:text="Button" />
+        android:text="Fragment 2" />
+
+</LinearLayout>
 
 </LinearLayout>
