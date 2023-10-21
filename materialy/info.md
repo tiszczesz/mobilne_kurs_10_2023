@@ -177,3 +177,21 @@ class Constructors {
 
 
 ### aplikacje MultiActivity
+
+https://www.geeksforgeeks.org/creating-multiple-screen-applications-in-android/
+
+
+Fragments
+
+ Fragment definiuje i zarządza własnym Układ, ma swój własny cykl życia i może obsługiwać własne zdarzenia wejściowe. Fragmenty Nie mogą żyć na własną rękę. Muszą być prowadzone przez działalność lub inną Fragment. Hierarchia widoku fragmentu staje się częścią lub przyłącza się do: Hierarchia widoku gospodarza.
+
+Modułowość
+
+Fragmenty wprowadzają modułowość i możliwość ponownego użytku Twojej działalności poprzez Pozwala ci podzielić UI na dyskretne kawałki. Działania są idealne Miejsce, aby umieścić globalne elementy wokół interfejsu użytkownika aplikacji, na przykład Szablon: szuflada nawigacyjna. Odwrotnie, fragmenty są lepiej dostosowane do definiowania i Zarządzaj interfejsem użytkownika jednego ekranu lub części ekranu.
+
+Rozważ aplikację, która reaguje na różne rozmiary ekranu. Na większych ekranach, ty Może chcieć, aby aplikacja wyświetlał statyczną szufladę nawigacyjną i listę w siatce Układ. Na mniejszych ekranach możesz chcieć, aby aplikacja wyświetlał dolną Nawigacja i lista w układzie liniowym.
+
+Zarządzanie tymi zmianami w działalności jest Nieporęcznie. Oddzielenie elementów nawigacyjnych od treści może to zrobić Proces bardziej zarządzalny. Działalność jest wtedy odpowiedzialna za wyświetlanie Prawidłowy interfejs nawigacyjny, podczas gdy fragment wyświetla listę z właściwą Układ.
+
+
+![Alt text](fragment-screen-sizes.png)
