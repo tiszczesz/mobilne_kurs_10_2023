@@ -21,6 +21,11 @@ https://cordova.apache.org/
 
 # Kotlin i Android studio
 
+
+## System Android
+Budowa warstwowa:
+![Alt text](Android-system-architecture.jpg)
+
 ## Język Kotlin
 https://kotlinlang.org/
 
