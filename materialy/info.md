@@ -188,15 +188,15 @@ https://www.geeksforgeeks.org/creating-multiple-screen-applications-in-android/
 
 Fragments
 
- Fragment definiuje i zarządza własnym Układ, ma swój własny cykl życia i może obsługiwać własne zdarzenia wejściowe. Fragmenty Nie mogą żyć na własną rękę. Muszą być prowadzone przez działalność lub inną Fragment. Hierarchia widoku fragmentu staje się częścią lub przyłącza się do: Hierarchia widoku gospodarza.
+A Fragment represents a reusable portion of your app's UI. A fragment defines and manages its own layout, has its own lifecycle, and can handle its own input events. Fragments can't live on their own. They must be hosted by an activity or another fragment. The fragment’s view hierarchy becomes part of, or attaches to, the host’s view hierarchy.
+Note: Some Android Jetpack libraries, such as Navigation, BottomNavigationView, and ViewPager2, are designed to work with fragments.
+Modularity
 
-Modułowość
+Fragments introduce modularity and reusability into your activity’s UI by letting you divide the UI into discrete chunks. Activities are an ideal place to put global elements around your app's user interface, such as a navigation drawer. Conversely, fragments are better suited to define and manage the UI of a single screen or portion of a screen.
 
-Fragmenty wprowadzają modułowość i możliwość ponownego użytku Twojej działalności poprzez Pozwala ci podzielić UI na dyskretne kawałki. Działania są idealne Miejsce, aby umieścić globalne elementy wokół interfejsu użytkownika aplikacji, na przykład Szablon: szuflada nawigacyjna. Odwrotnie, fragmenty są lepiej dostosowane do definiowania i Zarządzaj interfejsem użytkownika jednego ekranu lub części ekranu.
+Consider an app that responds to various screen sizes. On larger screens, you might want the app to display a static navigation drawer and a list in a grid layout. On smaller screens, you might want the app to display a bottom navigation bar and a list in a linear layout.
 
-Rozważ aplikację, która reaguje na różne rozmiary ekranu. Na większych ekranach, ty Może chcieć, aby aplikacja wyświetlał statyczną szufladę nawigacyjną i listę w siatce Układ. Na mniejszych ekranach możesz chcieć, aby aplikacja wyświetlał dolną Nawigacja i lista w układzie liniowym.
-
-Zarządzanie tymi zmianami w działalności jest Nieporęcznie. Oddzielenie elementów nawigacyjnych od treści może to zrobić Proces bardziej zarządzalny. Działalność jest wtedy odpowiedzialna za wyświetlanie Prawidłowy interfejs nawigacyjny, podczas gdy fragment wyświetla listę z właściwą Układ.
+Managing these variations in the activity is unwieldy. Separating the navigation elements from the content can make this process more manageable. The activity is then responsible for displaying the correct navigation UI, while the fragment displays the list with the proper layout.
 
 
 ![Alt text](fragment-screen-sizes.png)
