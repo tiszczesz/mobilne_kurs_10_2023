@@ -7,6 +7,11 @@ android {
     namespace = "com.example.cw5_lists"
     compileSdk = 34
 
+    buildFeatures{
+        viewBinding = true
+    }
+
+
     defaultConfig {
         applicationId = "com.example.cw5_lists"
         minSdk = 28
