@@ -30,7 +30,7 @@
             android:backgroundTint="#FFC107"
             android:text="DODAJ"
             android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textSize="18sp"
             app:cornerRadius="0dp" />
     </LinearLayout>
 
