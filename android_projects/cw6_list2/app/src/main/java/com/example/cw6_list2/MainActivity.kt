@@ -18,11 +18,11 @@ class MainActivity : AppCompatActivity() {
         bind = ActivityMainBinding.inflate(layoutInflater)
         setContentView(bind.root)
         val todos = arrayListOf<Todo>(Todo("ranne",Priority.ALERT), Todo("inne",Priority.LOW))
-        val adapter = ArrayAdapter<Priority>(
+        val adapterSpin = ArrayAdapter<Priority>(
             this,
             android.R.layout.simple_spinner_dropdown_item,
             pririty)
-        bind.spPriority.adapter = adapter;
+        bind.spPriority.adapter = adapterSpin;
         val listAdapter = ArrayAdapter<Todo>(this,android.R.layout.simple_list_item_1,todos)
         bind.lvTodos.adapter = listAdapter;
         bind.btnAdd.setOnClickListener {
