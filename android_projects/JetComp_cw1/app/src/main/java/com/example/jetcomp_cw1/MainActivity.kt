@@ -36,7 +36,11 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
                     //Greeting("Antoni")
-                    Wizytowka("Aneta","Bereta")
+                    Column {
+                        Wizytowka("Aneta","Bereta")
+                        showPrimes(count = 20)
+                    }
+
                 }
             }
         }
@@ -69,6 +73,12 @@ fun showNumbers(count:Int){
     val rndNumbers = RandomNumbers()
     Text(text = rndNumbers.getRandom(count))
 }
+@Composable
+fun showPrimes(count:Int){
+    val primesGenerator = PrimeNumbers()
+    val primes = primesGenerator.getPrimes(count)
+    Text(text = primesGenerator.primalsToString(primes))
+}
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
@@ -85,8 +95,9 @@ fun GreetingPreview() {
         Column {
             Wizytowka(firstname = "Roman", lastname = "Boman", modifier = Modifier)
             Wizytowka();
-            Numbers(count = 10)
-            showNumbers(count = 10)
+           // Numbers(count = 10)
+           // showNumbers(count = 10)
+            showPrimes(count = 20)
         }
 
     }

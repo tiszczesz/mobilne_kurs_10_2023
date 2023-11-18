@@ -13,8 +13,20 @@ class PrimeNumbers {
     }
     public fun getPrimes(count:Int):List<Int>{
         val primes = mutableListOf<Int>();
-
-
+        var number = 1
+        while(primes.count()<count){
+            number++
+            if(isPrimes(number)){
+                primes.add(number)
+            }
+        }
         return primes
+    }
+    public fun primalsToString(primes:List<Int>):String{
+        val sb = StringBuilder();
+        for (elem in primes){
+            sb.append(elem).append(" ")
+        }
+        return sb.toString()
     }
 }
