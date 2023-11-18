@@ -12,6 +12,14 @@ import org.junit.Assert.*
 class ExampleUnitTest {
     @Test
     fun addition_isCorrect() {
-        assertEquals(4, 2 + 2)
+        val primal = PrimeNumbers();
+        val result = primal.isPrimes(5)
+        assertTrue(result)
+    }
+    @Test
+    fun prime_unCorrect(){
+        val primal = PrimeNumbers();
+        val result = primal.isPrimes(12)
+        assertFalse(result)
     }
 }

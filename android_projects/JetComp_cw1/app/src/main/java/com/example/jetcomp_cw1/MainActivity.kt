@@ -64,7 +64,11 @@ fun Numbers(count:Int){
     Text(text = sb.toString(), textAlign = TextAlign.Center,
         modifier = Modifier.fillMaxWidth())
 }
-
+@Composable
+fun showNumbers(count:Int){
+    val rndNumbers = RandomNumbers()
+    Text(text = rndNumbers.getRandom(count))
+}
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
@@ -82,6 +86,7 @@ fun GreetingPreview() {
             Wizytowka(firstname = "Roman", lastname = "Boman", modifier = Modifier)
             Wizytowka();
             Numbers(count = 10)
+            showNumbers(count = 10)
         }
 
     }
